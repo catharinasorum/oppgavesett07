@@ -1,0 +1,76 @@
+/* Index */
+* {
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: lavender;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80vh;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-left: 2rem;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: lavender;
+    width: 100%;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+/* Index */
+#oppgavesett {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#oppgavesett h1 {
+    font-size: 3rem;
+}
+
+/* Oppgave 3 */
+#oppgave03-main {
+    height: 80vh;
+}
+#reiseBoks {
+    width: 70px;
+    height: 70px;
+    background-color: lavender;
+    border: 0.08rem solid black;
+    position: absolute;
+    left: 50px;
+    top: 250px;
+    user-select: none;
+}
+
+/* Oppgave 4 & 5 */
+#mobil {
+    stroke: black;
+    stroke-width: 4;
+    fill: black;
+}
+
+#knapp {
+    fill: rgb(181, 181, 247);
+}
+
+#knapp:hover {
+    fill: rgb(204, 204, 243);
+}

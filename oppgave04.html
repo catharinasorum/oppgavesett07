@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Oppgave 4 & 5- Mobil</title>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="./menu.css">
+    </head>
+    <body>
+        <header>
+            <nav id="menu"></nav>
+        </header>
+        
+        <main>
+            <h1>Oppgave 4 & 5 - Mobil</h1>
+
+            <svg width="300" height="500" x="20" y="20" rx="20" ry="20">
+                <rect id="mobil" x="20" y="20" rx="20" ry="20" width="250" height="450"/>
+                <rect id="knapp" x="60" y="380" rx="20" ry="20" width="60" height="60"/>
+            </svg>
+
+        </main>
+
+        <footer>
+            <p>Catharina Sørum</p>
+            <p>Frontend utvikling - 2019 - Fagskolen Kristiania</p>
+        </footer>
+
+        <script> 
+            const knapp = document.querySelector("#knapp");
+            const mobil = document.querySelector("#mobil");
+
+            function visBilde() {
+                mobil.style.fill = "lavender";
+            }
+
+            knapp.addEventListener("click", visBilde);
+        </script>
+        <script src="menu.js"></script>
+    </body>
+</html>

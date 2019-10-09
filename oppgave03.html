@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Oppgave 3</title>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="./menu.css">
+    </head>
+    <body>
+        <header>
+            <nav id="menu"></nav>
+        </header>
+        
+        <main id="oppgave03-main">
+            <h1>Oppgave 3</h1>
+
+            <div id="reiseBoks"></div>
+
+        </main>
+
+        <footer>
+            <p>Catharina Sørum</p>
+            <p>Frontend utvikling - 2019 - Fagskolen Kristiania</p>
+        </footer>
+
+        <script>
+            const reiseBoks = document.querySelector("#reiseBoks");
+            
+            let xpos = 90;
+            let fart = 8;
+            let xdir = 1;
+
+            function reise() {
+                xpos += xdir * fart;
+                reiseBoks.style.left = xpos + "px";    
+                reiseBoks.style.transform = `rotate(${xpos * fart / 20}deg)`;
+            }
+
+            function treffeHoyreVegg() {
+                if(xpos > innerWidth - 50) {
+                    xdir = -1;
+                }
+            }
+
+            function treffeVenstreVegg() {
+                if(xpos < 0) {
+                    xdir = 1;
+                }
+            }
+
+            function gameloop() {
+                treffeHoyreVegg();
+                treffeVenstreVegg();
+                reise();
+                requestAnimationFrame(gameloop);
+            }
+
+            gameloop();
+
+        </script>
+        <script src="menu.js"></script>
+    </body>
+</html>

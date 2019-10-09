@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Oppgave 2 - Sirkel </title>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="./menu.css">
+    </head>
+    <body>
+        <header>
+            <nav id="menu"></nav>
+        </header>
+        
+        <main>
+            <h1>Oppgave 2 - Sirkel </h1>
+            <h2>A</h2>
+                <svg width="150" height="150">
+                    <circle fill="rgb(181, 181, 247)" r="70" cx="70" cy="70"/>
+                </svg>
+
+            <h2>B</h2>
+                <div style="background-color:rgb(181, 181, 247);width:150px;height:150px;border-radius:50%"></div>
+
+            <h2>C</h2>
+                <canvas id="minSirkel" width="150" height="150";></canvas>
+
+        </main>
+
+        <footer>
+            <p>Catharina Sørum</p>
+            <p>Frontend utvikling - 2019 - Fagskolen Kristiania</p>
+        </footer>
+
+        <script>
+            const minSirkel = document.querySelector("#minSirkel");
+            const ctx = minSirkel.getContext("2d");
+
+            ctx.arc(70, 70, 70, 0, Math.PI * 2);
+            ctx.fillStyle = "rgb(181, 181, 247)";
+            ctx.fill();  
+        </script>
+        <script src="menu.js"></script>
+
+    </body>
+</html>
