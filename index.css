@@ -34,7 +34,7 @@ footer {
     padding: 1rem;
     text-align: center;
 }
-/* Index */
+/* Forsiden */
 #oppgavesett {
     display: flex;
     justify-content: center;
@@ -68,9 +68,15 @@ footer {
 }
 
 #knapp {
-    fill: rgb(181, 181, 247);
+    fill: transparent;
+    stroke:#eee;
 }
 
 #knapp:hover {
-    fill: rgb(204, 204, 243);
+    stroke-width: 2;
+}
+
+#bilde {
+    opacity: 0; 
+    transition: 0.3s;
 }

@@ -23,4 +23,5 @@
 #menu a:hover {
     color: rgb(181, 181, 247);
     font-weight: 700;
+    transition: 0.5s;
 }
